@@ -75,3 +75,221 @@ span {
     bottom: 0;
     right: 100px;
 }
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .backg{
+    bottom: 40px;
+}
+
+.images:hover .mira{
+    left: 45%;
+}
+
+/* abaout me */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3dfff; /* Warna background baby blue */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+}
+
+.about-section {
+    background-color: #e6f5ff; /* Warna background bagian konten */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid #fff; /* Warna border putih */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.content {
+    max-width: 600px;
+    margin-left: 20px;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #555;
+}
+
+ul {
+    list-style-type: square;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff; /* Warna latar belakang biru */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #0056b3; /* Warna latar belakang biru yang lebih gelap saat dihover */
+}
+
+/* Certificates */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3dfff; /* Warna background baby blue */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+}
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certificate {
+    margin: 10px;
+}
+
+.certificate img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff; /* Warna latar belakang biru */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #0056b3; /* Warna latar belakang biru yang lebih gelap saat dihover */
+}
+
+/* educations */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b3dfff; /* Warna background baby blue */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+}
+
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.school {
+    margin: 20px;
+    text-align: center;
+}
+
+.school h2 {
+    color: #333;
+    margin-top: 10px;
+}
+
+.school img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.school img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat dihover */
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff; /* Warna latar belakang biru */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #0056b3; /* Warna latar belakang biru yang lebih gelap saat dihover */
+}
