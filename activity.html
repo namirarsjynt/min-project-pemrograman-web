@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Activity</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="index.html">BACK TO HOME</a>
+    <a href="index.html" class="back-link" target="_self">Back to home</a>
+
+    <div class="activity grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- 1. Pekerja dan Penjual Barang -->
+        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
+            <h2 class="text-xl font-bold mb-2">Pekerja dan Penjual Barang</h2>
+            <img src="bumantara.png" alt="Pekerja dan Penjual Barang" class="w-full rounded">
+            <p class="mt-2 text-gray-600 dark:text-gray-300">Instagram: <a href="https://www.instagram.com/bumantara.studioo?igsh=Nmp1a2U3Zng2ejlm" target="_blank" class="text-blue-500">@worker_seller</a></p>
+        </div>
+        
+        <!-- 2. Suka Healing dan Berjalan-jalan -->
+        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
+            <h2 class="text-xl font-bold mb-2">Suka Healing dan Berjalan-jalan</h2>
+            <img src="healing.jpg" alt="Suka Healing dan Berjalan-jalan" class="w-full rounded">
+        </div>
+        
+        <!-- 3. Suka Kucing -->
+        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
+            <h2 class="text-xl font-bold mb-2">Suka Kucing</h2>
+            <img src="cat_lover.jpg" alt="Suka Kucing" class="w-full rounded">
+        </div>
+        
+        <!-- 4. Kegiatan Pengabdian -->
+        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
+            <h2 class="text-xl font-bold mb-2">Kegiatan Pengabdian</h2>
+            <img src="volunteer.jpg" alt="Kegiatan Pengabdian" class="w-full rounded">
+        </div>
+    </div>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded focus:outline-none">Toggle Dark Mode</button>
+
+    <!-- Include JavaScript file -->
+    <script src="jss/darkModeToggle.js" defer></script>
 </body>
 </html>
