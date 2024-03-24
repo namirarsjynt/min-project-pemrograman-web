@@ -4,44 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity</title>
-    <!-- Include Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="index.html" class="back-link" target="_self">Back to home</a>
+    <div class="container">
+       <!-- business -->
+        <div class="activity-item">
+            <h1>Business</h1>
+            <div class="content">
+                <img src="bumantara.png" alt="Business">
+                <p>Instagram: <a href="https://www.instagram.com/bumantara.studioo?igsh=aXdpbGRueWlvaG55" target="_blank">@bumantar_studioo</a></p>
+            </div>
+        </div>
 
-    <div class="activity grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <!-- 1. Pekerja dan Penjual Barang -->
-        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
-            <h2 class="text-xl font-bold mb-2">Pekerja dan Penjual Barang</h2>
-            <img src="bumantara.png" alt="Pekerja dan Penjual Barang" class="w-full rounded">
-            <p class="mt-2 text-gray-600 dark:text-gray-300">Instagram: <a href="https://www.instagram.com/bumantara.studioo?igsh=Nmp1a2U3Zng2ejlm" target="_blank" class="text-blue-500">@worker_seller</a></p>
+        <!-- Volunteer -->
+        <div class="activity-item">
+            <h1>Volunteer</h1>
+            <div class="content">
+                <div class="volunteer-images">
+                    <img src="inf.jpeg" alt="Volunteer 1">
+                    <img src="ndw.jpeg" alt="Volunteer 2">
+                    <img src="lo.jpeg" alt="Volunteer 3">
+                    <img src="pdd.jpeg" alt="Volunteer 4">
+                </div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="commentsList">
+                        <li>Great experience!</li>
+                        <li>Would love to participate again.</li>
+                        <li>Amazing team!</li>
+                    </ul>
+                    <h3>Share Your Experience:</h3>
+                    <p>Have you participated in our volunteer activities? Share your experience with us!</p>
+                    <form id="commentForm">
+                        <input type="text" id="comment" name="comment" placeholder="Enter your comment" required><br><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-        <!-- 2. Suka Healing dan Berjalan-jalan -->
-        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
-            <h2 class="text-xl font-bold mb-2">Suka Healing dan Berjalan-jalan</h2>
-            <img src="healing.jpg" alt="Suka Healing dan Berjalan-jalan" class="w-full rounded">
-        </div>
-        
-        <!-- 3. Suka Kucing -->
-        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
-            <h2 class="text-xl font-bold mb-2">Suka Kucing</h2>
-            <img src="cat_lover.jpg" alt="Suka Kucing" class="w-full rounded">
-        </div>
-        
-        <!-- 4. Kegiatan Pengabdian -->
-        <div class="activity-item bg-white dark:bg-gray-800 rounded-lg shadow-lg p-4">
-            <h2 class="text-xl font-bold mb-2">Kegiatan Pengabdian</h2>
-            <img src="volunteer.jpg" alt="Kegiatan Pengabdian" class="w-full rounded">
+
+        <!-- Penari -->
+        <div class="activity-item">
+            <h1>Penari</h1>
+            <div class="content">
+                <img src="nr1.jpeg" alt="Penari">
+                <img src="nr2.jpeg" alt="Penari">
+            </div>
         </div>
     </div>
-
-    <!-- Dark Mode Toggle Button -->
-    <button id="darkModeToggle" class="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded focus:outline-none">Toggle Dark Mode</button>
-
-    <!-- Include JavaScript file -->
-    <script src="jss/darkModeToggle.js" defer></script>
+   
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <a href="index.html" class="back-link" target="_self">Back to home</a>
+    <script src="script.js" defer></script>
 </body>
 </html>
